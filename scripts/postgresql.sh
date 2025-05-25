@@ -12,10 +12,15 @@
     #  @author      Christian Locher <locher@faithpro.ch>
     #  @copyright   2025 Faithful programming
     #  @license     http://www.gnu.org/licenses/gpl-3.0.en.html GNU/GPLv3
-    #  @version     alpha - 2025-05-23
+    #  @version     alpha - 2025-05-25
     #  @since       File available since release alpha
     #
     #########
+
+function updateDebian {
+    apt-get update
+    apt-get full-upgrade -y
+}
 
 function setUpPostgreSQL {
     # update system
@@ -51,6 +56,11 @@ function setUppgAdmin {
     export PGADMIN_SETUP_PASSWORD="vagrant"
     /usr/pgadmin4/bin/setup-web.sh --yes
 }
+
+echo "#################"
+echo "# update debian #"
+echo "#################"
+updateDebian
 
 echo "####################"
 echo "# setup PostgreSQL #"
