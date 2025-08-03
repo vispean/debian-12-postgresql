@@ -13,6 +13,11 @@ Provisioning of two debian 12 machines with PostgreSQL and a replication between
 
 - see https://github.com/vispean/debian-12-lamp section with the same title
 
+## Sakila
+
+- the data used for populating the sakila database is taken from mysql: https://dev.mysql.com/doc/sakila/en/
+- many thanks to Mike Hillyer and all the other contributors
+
 ## Connect to PostgreSQL
 - to get the ip address of the guest machine run on the guest machine the following command: `ip addr show`
 - open the browser on the host machine
