@@ -4,7 +4,6 @@ Vagrant.configure("2") do |config|
 
   config.vm.define "primary" do |primary|
     primary.vm.box = "loch-tech/debian-12-bookworm-ch"
-    #primary.vm.box = "debian-12-bookworm-ch"
     primary.vm.network "private_network", ip: "192.168.56.10"
 
     primary.vm.provider "virtualbox" do |vb|
@@ -20,7 +19,6 @@ Vagrant.configure("2") do |config|
 
   config.vm.define "replica" do |replica|
     replica.vm.box = "loch-tech/debian-12-bookworm-ch"
-    #replica.vm.box = "debian-12-bookworm-ch"
     replica.vm.network "private_network", ip: "192.168.56.11"
 
     replica.vm.provider "virtualbox" do |vb|
