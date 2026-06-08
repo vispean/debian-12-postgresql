@@ -21,6 +21,6 @@ Provisioning of two debian 12 machines with PostgreSQL and a replication between
 ## Connect to PostgreSQL
 - to get the ip address of the guest machine run on the guest machine the following command: `ip addr show`
 - open the browser on the host machine
-- enter http://`<insert guest ip address>`/pgadmin4 (for example: http://192.168.56.10/pgadmin)
+- enter http://`<insert guest ip address>`/pgadmin4 (for example: http://192.168.56.10/pgadmin4)
 - email: vagrant@vagrant.com
 - password: vagrant
